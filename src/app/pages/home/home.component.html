@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <img src="assets/shapes.svg" alt="lol">
+    <h1>Conférence</h1>
+    <ion-row>
+      <ion-datetime disabled=true dateFormat="DD MMM, YYYY" value="{{startDate}}"></ion-datetime>
+      __
+      <ion-datetime disabled=true dateFormat="DD MMM, YYYY" value="{{endDate}}"></ion-datetime>
+    </ion-row>
+
+
+    <ion-button href="/app/sessions">
+      <ion-label>Voir les sessions</ion-label>
+    </ion-button> 
+    <ion-button href="/app/presenters">
+      <ion-label>Voir les présentateurs</ion-label>
+    </ion-button>
+    
+  </ion-content>
+</ion-content>
